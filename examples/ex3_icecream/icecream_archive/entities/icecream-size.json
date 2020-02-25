@@ -1,0 +1,9 @@
+{
+  "id": "3d613889-b196-4e12-8e8d-5dd19d226e2c",
+  "name": "icecream-size",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

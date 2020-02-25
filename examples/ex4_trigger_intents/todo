@@ -1,0 +1,14 @@
+Talk about intent "triggering" and how in DialogFlow you usually provide "hints" rather than explicitly linking conversations together
+- Only users trigger intents (usually)
+
+- Input & output context
+    - Ex. parent intent
+
+- Events
+    EX. parent intent in fulfillment that triggers a child intent 
+    w/ an Events
+
+- Follow up intents
+    - {{screen}}
+    - Looks nice in interface & it wires up input + output intents for you
+    - It's a convenience feature, that's all

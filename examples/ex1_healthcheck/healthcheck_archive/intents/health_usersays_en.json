@@ -1,0 +1,38 @@
+[
+  {
+    "id": "99a57526-5142-41fd-b2df-5204239d462f",
+    "data": [
+      {
+        "text": "Hey bot are you ok?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c6229276-e100-459e-9fc9-50a8fda311fa",
+    "data": [
+      {
+        "text": "healthcheck",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "109d7780-a70b-414d-acc2-8d3031f265fa",
+    "data": [
+      {
+        "text": "health",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

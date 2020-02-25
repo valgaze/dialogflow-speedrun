@@ -1,0 +1,9 @@
+{
+  "id": "260ac7e7-8593-4cb2-a4cd-68d927a0c16c",
+  "name": "icecream-flavor",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": false
+}

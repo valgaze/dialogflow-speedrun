@@ -1,0 +1,38 @@
+{
+  "name": "dialogflowspeedrun",
+  "version": "1.0.0",
+  "description": "Zero-config tooling for DialogFlow fulfillment rapid prototyping",
+  "main": "boot.js",
+  "scripts": {
+    "eject:gcloud": "cd util/scripts && node npm_helpers.js -e gcloud",
+    "eject:express": "cd util/scripts && node npm_helpers.js -e express",
+    "start": "node boot.js",
+    "server": "node boot.js --skip",
+    "server:dev": "nodemon boot.js --skip",
+    "tunnel": "cd util && node ngrok.js -t",
+    "tunnel:dev": "cd util && node ngrok.js -td",
+    "create:intent": "cd util && node quiz.js",
+    "test": "tape tests/**/*.js"
+  },
+  "keywords": [
+    "DialogFlow",
+    "Fulfillment",
+    "Quick-start",
+    "speedrun"
+  ],
+  "author": "Victor Algaze",
+  "license": "MIT",
+  "dependencies": {
+    "actions-on-google": "^2.12.0",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.8.18",
+    "body-parser": "^1.19.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.17.1",
+    "ngrok": "3.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "tape": "^4.13.0"
+  }
+}

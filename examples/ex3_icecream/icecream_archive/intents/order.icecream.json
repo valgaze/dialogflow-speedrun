@@ -1,0 +1,88 @@
+{
+  "id": "a2770bd5-6b88-48be-a939-bbb01cd4dcde",
+  "name": "order.icecream",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0bb87990-8ce6-4896-9b95-b7d9db6afd16",
+          "required": true,
+          "dataType": "@icecream-size",
+          "name": "icecream-size",
+          "value": "$icecream-size",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What size?"
+            },
+            {
+              "lang": "en",
+              "value": "Small, medium or large?"
+            },
+            {
+              "lang": "en",
+              "value": "What size would you like for your ice cream?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "45ee55fe-6eb3-41d5-99ed-b1cdf5672a1c",
+          "required": true,
+          "dataType": "@icecream-flavor",
+          "name": "icecream-flavor",
+          "value": "$icecream-flavor",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What flavor? (ex, vanilla, chocolate, strawberry, mint, broccoli etc)"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "23b8006f-a525-448f-8018-385c78e6a382",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

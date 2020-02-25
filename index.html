@@ -1,0 +1,104 @@
+<h1>Resources</h1>
+
+<pre>
+# Resources
+
+Learning DialogFlow is very much a team sport. Below's a highlight reel of excellent DialogFlow resources, both official & unofficial:
+
+- [Libraries](#Libraries)
+
+- [Official Samples](#Official-Samples)
+
+- [Great 3rd Party Resources](#Great-3rd-Party-Resources)
+
+
+## Libraries
+
+**[NodeJS Client for DialogFlow](https://www.npmjs.com/package/dialogflow)** Use this library if you want to control each "turn" of the conversation (ie you're responsible for POST'ing user text to DialogFlow's API, get the response, render it, etc etc)
+
+* Source: https://github.com/googleapis/nodejs-dialogflow 
+
+* Documentation: https://googleapis.dev/nodejs/dialogflow/latest/index.html
+
+**[DialogFlow-fulfillment](https://www.npmjs.com/package/dialogflow-fulfillment)** This is a library for **["fulfillment"](https://cloud.google.com/dialogflow/docs/fulfillment-overview)**(where DialogFlow calls into your system's webhook to retrieve data or perform some work.) This is also what DialogFlow's **[inline editor](https://cloud.google.com/dialogflow/docs/fulfillment-inline-editor)** uses for fulfillment code. Note that **[as of January 2020](https://github.com/dialogflow/dialogflow-fulfillment-nodejs/commit/86a844a34ce61a665fa3687afe91af68b3dca0b8)** it is no longer maintained.
+
+* Source: https://github.com/dialogflow/dialogflow-fulfillment-nodejs 
+
+* Documentation: https://blog.dialogflow.com/post/fulfillment-library-beta/
+
+**[actions-on-google](https://www.npmjs.com/package/actions-on-google)** Use this ONLY if you're planning on building an agent that works with Google Assistant. actions-on-google has a slighlty different syntax than dialogflow-fulfillment and its rich components (cards, suggeestion chips, carousel, etc) will not render on any non-Google Assistant device/interface. 
+
+* Source: https://github.com/actions-on-google/actions-on-google-nodejs/tree/master/src/service/dialogflow 
+
+* Documentation: https://actions-on-google.github.io/actions-on-google-nodejs/2.12.0/index.html
+
+* Documentation 2: https://developers.google.com/assistant/actions/reference/nodejsv2/overview
+
+* Example (actions-on-google + dialogflow-fulfillment): https://github.com/dialogflow/fulfillment-actions-library-nodejs/blob/master/functions/index.js
+
+* Rich media JSON payloads (actions-on-google only): https://github.com/dialogflow/fulfillment-webhook-json
+
+
+## Official Samples
+
+- https://github.com/dialogflow/resources
+
+- https://cloud.google.com/dialogflow/docs/quick/build-agent
+
+- https://github.com/dialogflow/fulfillment-webhook-nodejs/blob/master/functions/index.js
+
+- https://github.com/dialogflow/fulfillment-slot-filling-nodejs/blob/master/functions/index.js
+
+- https://github.com/GoogleCloudPlatform/dialogflow-integrations
+
+- https://cloud.google.com/dialogflow/docs/reference/rest/v2beta1-overview
+
+
+## Great 3rd Party Resources
+
+**[Deborah Kay's](https://chatbotslife.com/@debbiediscovers)** "knock-knock" joke series (clever use of intents)
+
+- https://chatbotslife.com/how-to-handle-context-with-dialogflow-part-1-knock-knock-jokes-4659b346d83b
+
+- https://chatbotslife.com/how-to-use-context-with-dialogflow-to-handle-errors-part-2-knock-knock-its-me-510c82840e6d
+
+- https://chatbotslife.com/how-to-use-context-with-dialogflow-when-users-spoil-your-punchline-part-3-knock-knock-jokes-f4585179e47e
+
+- https://chatbotslife.com/using-context-and-entities-in-dialogflow-to-respond-to-users-jokes-part-4-knock-knock-jokes-97b2727cfbad
+
+**[Javier Martinez](http://jamarmu.es/)** 101 series on DialogFlow
+
+- http://jamarmu.es/dialogflow-1-intro-to-the-platform/
+
+- http://jamarmu.es/dialogflow-2-intents-and-conversation-flows/
+
+- http://jamarmu.es/dialogflow-3-calling-a-fulfillment-to-process-information/
+
+- http://jamarmu.es/dialogflow-4-using-entities-parameters-and-contexts/
+
+- http://jamarmu.es/dialogflow-5-connecting-to-a-datastore-database/
+
+- http://jamarmu.es/dialogflow-6-using-events-to-trigger-intents/
+
+**[Aravind Mohanoor](https://miningbusinessdata.com/)** has been writing about DialogFlow since its API.AI days
+
+- https://miningbusinessdata.com/recommended-tools-and-services-for-dialogflow-bot-makers/
+
+- https://miningbusinessdata.com/the-must-know-dialogflow-concepts/
+
+- https://miningbusinessdata.com/reader-question-slot-filling-vs-follow-up-intents/
+
+- https://miningbusinessdata.com/build-better-dialogflow-bots/
+
+- https://miningbusinessdata.com/reader-question-will-followup-events-work-when-an-intent-has-an-input-context/
+  
+**[Kevin Dhir's](https://medium.com/@kevinkdhir)** DialogFlow basics talk + demo
+
+- https://www.youtube.com/watch?v=DkZmVLHoCLo
+
+## Displaying on web
+
+* https://cloud.google.com/dialogflow/docs/integrations/web-demo
+
+* https://github.com/mishushakov/dialogflow-web-v2
+</pre>
