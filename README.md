@@ -23,11 +23,11 @@ The goal here is to help *smooth* the initial learning curve and to encourage le
 
 ## What's "fulfillment"?
 
-In DialogFlow fulfillment is what makes it an "intelligent agent" instead of a merely lowly "chatbot." After DialogFlow detects an intent from a user's input text, if fulfillment is enabled for that intent, DialogFlow will dispatch a request to your "webhook" along with a bunch of contextual information you can use to return a response to the user. After you're up and running with the basics, working with fulfillment can be both very fun and powerful.
+In DialogFlow fulfillment is what makes it an "intelligent agent" instead of a mere lowly "chatbot." After DialogFlow detects an intent from a user's input text, if fulfillment is enabled for that intent, DialogFlow will dispatch a request to your "webhook" along with a bunch of contextual information you can use to return a response to the user. After you're up and running with the basics, working with fulfillment can be both very fun and powerful.
 
 ## Examples
 
-See the **[examples directory](./examples)** for some sample scenarios and associated fulfillment code (and **[the "Running the Examples" guide](./docs/running-the-examples.md)** for how to activate it.)
+See the **[examples directory](./examples)** for some sample scenarios and associated fulfillment code (and **[the "Running the Examples" guide](./docs/running_the_examples.md)** for how to activate it.)
 
 Also check out the **[docs](./docs/README.md)** directory for learning resources like a **[glossary](./docs/glossary.md)** and a **[listing of helpful resources](./docs/resources.md)**
 
