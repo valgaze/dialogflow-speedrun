@@ -9,11 +9,80 @@ module.exports = {
     exists,
     copy,
     _buildDashboard,
+    validateIntentList,
 }
 
 // sneaky trick for circular dependencies
 const { nGrok } = require('./ngrok');
 module.exports.nGrok = nGrok;
+
+
+/*
+  intentList
+    [ 
+      { name:         'intentname', 
+        handler: './handlers/intent.js'},
+      { name:         'intentname 2', 
+      handler: './handlers/intent_2.js'},
+    ]
+*/
+function validateIntentList(intentList, alert = console.log) {
+  return true;
+
+  // STUB OUT FOR NOW
+  let result = false;
+  const warnings = [];
+
+  /* Some rules:
+    - No doubles on intentnames
+    - Each intent needs exactly 2 strings: (1) name & (2) handler, both strings
+    - Warn on:
+      - recycled handlers handlers
+      - 
+
+  */
+   const dupes = {}
+
+   for (let i = 0; i < intentList.length; i++) {
+      const {name, handler} = intent;
+      if (!name) alert(`On item # ${index+1}, missing 'name', exiting...`) && process.exit(1)
+      if (!handler) alert(`On item # ${index+1}, missing 'handler', exiting...`) && process.exit(1)
+
+   }
+
+      var intentList = [{handler:'a'}, {handler:'b'}, {handler:'c'}]
+    
+
+
+var intentList = [{handler:'a'}, {handler:'b'}, {handler:'c'}]
+
+console.log(vally(intentList))
+
+
+    if (dupes[name] !== undefined) {
+      alert(`Catastrophic error: You have two intents with same name '${name}' Exiting...`)
+      process.exit(1)
+    } else {
+      duples[name] = 1;
+    }
+
+    
+    
+    if (dupes[handler] !== undefined) {
+      warnings.push(`Warning: You have two intents with the same handler '${handler}' Exiting...`)
+    } else {
+      dupes[handler] = 1;
+    }
+
+   });
+
+  // Complain
+  warnings.forEach((warning) => {
+    alert(warning)
+  })
+  
+  return true;
+}
 
 // Really should be run once on startup
 // Verifies port & webhook present in config.js

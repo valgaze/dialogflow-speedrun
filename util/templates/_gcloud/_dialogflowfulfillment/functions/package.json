@@ -1,0 +1,21 @@
+{
+    "name": "dialogflowFirebaseFulfillment",    
+    "descrption": "Transpiled actions-on-google handler",
+    "version": "1.0.0",
+    "private": true,
+    "license": "MIT",
+    "engines": {
+      "node": "6"
+    },
+    "scripts": {
+      "start": "firebase serve --only functions:dialogflowFirebaseFulfillment",
+      "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment"
+    },
+    "dependencies": {
+      "actions-on-google": "^2.2.0",
+      "firebase-admin": "^5.13.1",
+      "firebase-functions": "^2.0.2",
+      "dialogflow": "^0.6.0",
+      "dialogflow-fulfillment": "^0.5.0"
+    }
+  }

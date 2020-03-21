@@ -23,36 +23,6 @@ function hook(req, res) {
 
 
 
-/*
- __________   ___      ___      .___  ___. .______    __       _______     _______.
-|   ____\  \ /  /     /   \     |   \/   | |   _  \  |  |     |   ____|   /       |
-|  |__   \  V  /     /  ^  \    |  \  /  | |  |_)  | |  |     |  |__     |   (----`
-|   __|   >   <     /  /_\  \   |  |\/|  | |   ___/  |  |     |   __|     \   \    
-|  |____ /  .  \   /  _____  \  |  |  |  | |  |      |  `----.|  |____.----)   |   
-|_______/__/ \__\ /__/     \__\ |__|  |__| | _|      |_______||_______|_______/    
-Below uncomment each call to activate each intent handler
-Note: see the associated directory in /examples for any setup
-you need to do in console                                                                                   
-*/
-
-  /*  EXAMPLE: 'kitchensink' intent
-    - Uncomment below
-    - See readme in /examples how to setup in dialogflow web console
-  */
-  // registerHandler('kitchensink', require('./handlers/kitchensink.intent.js'));
-  
-  /*  EXAMPLE: 'icecream' intent
-    - Uncomment below
-    - See readme in /examples how to setup in dialogflow web console
-  */
-  // registerHandler('icecream', require('./handlers/icecream.intent.js'));
-
-
-
-
-
-
-
 /* Two ways to do intents:
   * 1) Separate intent files:
     $ npm run create:intent

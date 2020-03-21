@@ -4,6 +4,7 @@
   "description": "Zero-config tooling for DialogFlow fulfillment rapid prototyping",
   "main": "boot.js",
   "scripts": {
+    "bundle": "npx webpack",
     "eject:gcloud": "cd util/scripts && node npm_helpers.js -e gcloud",
     "eject:express": "cd util/scripts && node npm_helpers.js -e express",
     "start": "node boot.js",
@@ -33,6 +34,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2",
-    "tape": "^4.13.0"
+    "tape": "^4.13.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   }
 }

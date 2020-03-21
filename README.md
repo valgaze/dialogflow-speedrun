@@ -1,3 +1,20 @@
+------
+
+- create validate function
+    - create tests for validate function
+
+- Update example docs for new intent map
+
+- Tidy up directory structure
+
+
+Add a gif t
+
+-----
+
+
+
+
 ## DialogFlow-Speedrun
 
 ```
