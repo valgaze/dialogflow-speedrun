@@ -12,6 +12,7 @@ function hook(req, res) {
   registerHandler('health', require('./../examples/ex1_healthcheck/health.intent.js'));
   registerHandler('kitchensink', require('./../examples/ex2_kitchensink/kitchensink.intent.js'));
   registerHandler('order.icecream', require('./../examples/ex3_icecream/icecream.intent.js'));
+  registerHandler('dadjokes', require('./../examples/ex4_dadjokes/dadjokes.intent.js'));
 
 
 

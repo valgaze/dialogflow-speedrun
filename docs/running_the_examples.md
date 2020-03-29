@@ -26,7 +26,7 @@ Any special intents/entity/context/etc configuration should now be available in 
 
 ### 2) Register the fulfillment code
 
-Each example will have a file **example_name.intent.js** that needs to be associated with an **intent** in **[webhook/index.js](./../webhook/index.js)**
+Each example will have a fulfillment "handler" file named **example_name.intent.js** that needs to be attached to an **intent** in **[webhook/index.js](./../webhook/index.js)** Anytime the intent is matched, the associated fulfillment handler will fire. An intent can only have a single handler (but that single handler can contain logic that alters behavior based on the parameters/context from the matched intent.)
 
 You can copy/paste from the example's readme a line that will look something like this:
 
