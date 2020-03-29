@@ -4,6 +4,9 @@
   "description": "Zero-config tooling for DialogFlow fulfillment rapid prototyping",
   "main": "boot.js",
   "scripts": {
+    "1st_time":"echo \"Copy these commands:\n\" && npm run cmd:tunnel --silent && npm run cmd:server --silent",
+    "cmd:server": "echo \"cd $PWD && npm run server:dev\"",
+    "cmd:tunnel": "echo \"cd $PWD && npm run tunnel\"",
     "eject:gcloud": "cd util/scripts && node npm_helpers.js -e gcloud",
     "eject:express": "cd util/scripts && node npm_helpers.js -e express",
     "start": "node boot.js",
@@ -24,6 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "actions-on-google": "^2.12.0",
+    "axios": "^0.19.2",
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.8.18",
     "body-parser": "^1.19.0",

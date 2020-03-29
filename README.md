@@ -15,7 +15,7 @@
 
 A speedrun is essentially a race through a videogame as quickly as possible discarding or avoiding every non-essential activity along the way to save on time. This is repo is kind of the same thing-- it should help accelerate getting you to the "end." 
 
-[![speedrun](./assets/yt_thumbnail_play.png)](http://www.youtube.com/watch?v=tmnMq2Hw72w "Speed Run")
+[![speedrun](./assets/yt_thumbnail_play.png)](https://youtu.be/Zj0VvXZXDb4?t=76 "Speed Run")
 
 ## What's the "end"?
 
@@ -31,6 +31,12 @@ See the **[examples directory](./examples)** for some sample scenarios and assoc
 
 Also check out the **[docs](./docs/README.md)** directory for learning resources like a **[glossary](./docs/glossary.md)** and a **[listing of helpful resources](./docs/resources.md)**
 
+## Quick Link
+|  Item | Desc |
+| :---: | --- |
+|  **[glossary.md](./docs/glossary.md)** | Simple explainers of fundamental DialogFlow concepts |
+|  **[resources.md](./docs/resources.md)** | Vouched-for links & articles |
+|  **[running_the_examples.md](./docs/running_the_examples.md)** | Guide for running examples in this repo |
 
 ## Tests
 

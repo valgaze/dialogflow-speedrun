@@ -62,6 +62,10 @@ For fulfillment you need:
 
 - The name of the intent (so when DialogFlow contacts your webhook server it knows where to go)
 
+If fulfillment calls a 3rd-party API, your setup will look something like this:
+
+![pipeline](./../assets/fulfillment_pipeline.png)
+
 Note: you can use Google Cloud functions which have a 1st-classs integration into the DialogFlow web console or host your own server
 
 Also note that fulfillment should be quick, there's a maximum 5-second limit:

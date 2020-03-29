@@ -26,7 +26,7 @@ Any special intents/entity/context/etc configuration should now be available in 
 
 ### 2) Register the fulfillment code
 
-Each example will have a file **example_name.intent.js** that needs to be associated with an **intent** in **[webhook/index.js](./../webhook/index.js)**
+Each example will have a fulfillment "handler" file named **example_name.intent.js** that needs to be attached to an **intent** in **[webhook/index.js](./../webhook/index.js)** Anytime the intent is matched, the associated fulfillment handler will fire. An intent can only have a single handler (but that single handler can contain logic that alters behavior based on the parameters/context from the matched intent.)
 
 You can copy/paste from the example's readme a line that will look something like this:
 
@@ -36,9 +36,10 @@ registerHandler('intent name', require('./../examples/exname/ex_name.intent.js')
 
 ### 3) "Turn on" the webhook
 
-The easiest thing to do is open 2 terminal windows and change the directory to dialogflow-speedrun in both of them
+The easiest thing to do is open 2 terminal windows and change the directory to dialogflow-speedrun in both of them. 
 
-In one window turn on the server by typing:
+
+A) In one window turn on the server by typing:
 
 ```sh
 npm run server:dev
@@ -46,7 +47,7 @@ npm run server:dev
 
 * Note that with the command above, if you change/save your code the webhook server will restart for you automatically
 
-In the other terminal window, enter the following command to get the fulfillment webhook URL from **[nGrok](#nGrok)** (CTRL-C to quit)
+B) In the other terminal window, enter the following command to get the fulfillment webhook URL from **[nGrok](#nGrok)** (CTRL-C to quit)
 
 ```sh
 npm run tunnel
@@ -54,6 +55,14 @@ npm run tunnel
 
 ![tunnel](../assets/boot_tunnel.gif)
 
+
+[Optional] Get 2 copy/pastable commands:
+
+If you have any trouble with above, run this command from whichever director you cloned this repo:
+
+```
+npm run 1st_time
+```
 
 ### 4) Update the fulfillment webhook URL in DialogFlow
 

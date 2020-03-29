@@ -1,5 +1,6 @@
 // Same intent
 // $ npm run create:intent
+// Register in index.js
 const {
     // Card,
     // Image,

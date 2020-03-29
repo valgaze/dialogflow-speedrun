@@ -85,7 +85,7 @@ Learning DialogFlow is very much a team sport. Below's a highlight reel of excel
 
 - https://chatbotslife.com/using-context-and-entities-in-dialogflow-to-respond-to-users-jokes-part-4-knock-knock-jokes-97b2727cfbad
 
-**[Javier Martinez](http://jamarmu.es/)** 101 series on DialogFlow
+**[Javier Martinez](http://jamarmu.es/)** **([@jamarmu_es](https://twitter.com/jamarmu_es))** 101 series on DialogFlow
 
 - http://jamarmu.es/dialogflow-1-intro-to-the-platform/
 
@@ -98,6 +98,60 @@ Learning DialogFlow is very much a team sport. Below's a highlight reel of excel
 - http://jamarmu.es/dialogflow-5-connecting-to-a-datastore-database/
 
 - http://jamarmu.es/dialogflow-6-using-events-to-trigger-intents/
+
+## End-to-End Articles
+
+Good general end to end articles, some drift into actions-on-google, but very thorough:
+
+* https://www.raywenderlich.com/4739762-building-an-action-for-google-assistant-getting-started
+
+* https://fireship.io/lessons/build-a-chatbot-with-dialogflow/
+
+* https://angularfirebase.com/lessons/chatbot-in-angular-with-dialogflow-api-ai/
+
+* https://medium.com/leboncoin-engineering-blog/dialogflow-a-complete-guide-with-webhook-85b8456b4e1d
+
+* Matt Carrol's blog post (DialogFlow Fulfillment author): https://matthewayne.com/post/actions-on-google-v2-alpha-dialogflow-fullfillment-beta/
+
+* https://matthewayne.com/post/building-conversations/
+
+## Good issues & threads
+
+Various educational threads & issues. 
+
+### Actions-on-google DialogFlow fulfillment
+
+
+
+* Set platform "trick": https://github.com/dialogflow/dialogflow-fulfillment-nodejs/issues/149#issuecomment-590634801
+
+* Sample code combining: https://github.com/dialogflow/fulfillment-actions-library-nodejs/blob/master/functions/index.js
+
+* 100% actions-on-google Cloud Code sample (no dialogflow-fulfillment): https://github.com/actions-on-google/dialogflow-facts-about-google-nodejs/blob/master/functions/index.js
+
+* https://stackoverflow.com/questions/48635067/send-back-rich-responses-to-actions-on-google-through-dialogflow-webhook-fulfill/48640297#48640297 
+
+### gRPC <> JSON
+
+If you directly transact with the DialogFlow APIs, make sure to transform your data into a gRPC-compliant format (protobuff)
+
+
+* JSON spec for API interactions: https://cloud.google.com/dialogflow/docs/reference/rest/v2/projects.agent.sessions/detectIntent
+
+* Fix (author of DialogFlow Fulfillment): https://stackoverflow.com/a/47666256/3191929
+
+
+* Protobuff utils: https://www.npmjs.com/package/pb-util
+
+* Old commit converting JSON <> gRPC: https://github.com/googleapis/nodejs-dialogflow/blob/d907f3af57438c3e88c274b100eab520b5b51062/samples/structjson.js
+
+* JSON <> gRPC: https://gist.github.com/matthewayne/e9dbd9a428420c3af399cb03d6b526b9 
+
+
+### Rich Response Payloads
+
+
+
 
 
 ## Displaying on web

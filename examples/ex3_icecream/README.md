@@ -1,5 +1,5 @@
 
-**[Jump to Demonstration >>](#Diagram/Screenshots)**
+**[Jump to Demonstration >>](#DiagramScreenshots)**
 
 ## Setup
 
